@@ -26,19 +26,24 @@ body {
 
 /* Header */
 header {
+    display: flex;
     background-color: aquamarine; 
     padding: 20px 0; 
     width: 100%;
 }
-#container_header {
+.container_header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    width: fit-content;
+    width: 1202px; 
+    margin: 0 auto; 
+    padding: 20px; 
 }
 .name_product h1 {
     justify-content: start;
+    align-items: center;
     font-size: 2.5em; 
+    width: fit-content;
+    
 }
 .button_one {
     justify-content: end;
