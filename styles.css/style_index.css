@@ -22,7 +22,7 @@ body {
 /* Header */
 header {
     display: flex;
-    background-color: rgb(50, 50, 236); 
+    background-color: #17214C ;
     color: white;
     padding: 20px 0; 
     width: 100%;
@@ -48,9 +48,13 @@ header {
     font-weight: 500;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 6px;
     cursor: pointer;
     font-size: 1em; 
+    transition: transform .8s ease;
+}
+.button_one button:hover {
+    transform: scale(1.1);
 }
 /* MAIN */
 main {
@@ -60,10 +64,37 @@ main {
     width: 100%;
 }
 .sec_desc {
-    background-color: rgba(0, 255, 255, 0.603);
+    display: flex;
+}
+.sec_balloon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 150px;
+    background-color: #17214C ;
+    position: relative;
+}
+.sec_balloon::before {
+    content: "";
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    border-top: 40px solid #17214C;
+}
+.div_balloon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    font-weight: bold;
 }
 .sec_price {
-    background-color: #ffd9015d;
+    
 }
 .container_main {
     display: flex;
@@ -103,6 +134,11 @@ main {
     cursor: pointer;
     font-size: 1em; 
     margin-top: 30px;
+
+    transition: transform .5s ease;
+}
+.button_two button:hover {
+    transform: scale(1.1);
 }
 .imagem {
     display: flex;
@@ -117,27 +153,34 @@ main {
 }
 .box_price {
     display: flex;
-    border-color: black;
-    border-style: groove;
+    border-color: rgb(163, 161, 161);
+    border-style: solid;
     border-width: 1px;
     border-radius: 15px;
     height: auto;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.599);
     transition: transform .6s ease;
+    height: 600px;
 }
 .box_price:hover {
     transform: scale(1.05);
 }
+.p_price {
+    font-size: 6em;
+    color: #6B65A9;
+}
 .box_price_center {
     display: flex;
-    border-color: black;
-    border-style: groove;
+    border-color: rgba(0, 0, 0, 0.664);
+    border-style: solid;
     border-width: 3px;
     border-radius: 15px;
     height: auto;
     margin: 20px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.599);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.349);
     transition: transform .3s ease;
+    height: 630px;
+    background-color: #F9F8DA ;
 }
 .box_price_center:hover {
     transform: scale(1.04);
@@ -146,13 +189,16 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
+    padding: 40px;
 }
 .info_desc {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 30px;
+}
+h3 {
+    font-size: 2.5em;
 }
 .imagem_buy {
     margin: 30px;
@@ -162,8 +208,9 @@ main {
     flex-direction: column; 
     align-items: center;  
 }
-.p_price {
-    font-size: 5em;
+.p_best_price {
+    font-size: 7em;
+    color: #211D50;
 }
 .p_bottle {
     font-size: 1em;
@@ -178,11 +225,13 @@ main {
     border: none;
     border-radius: 10px;
     cursor: pointer;
-    font-size: 1em; 
+    font-size: 2em; 
     margin-top: 20px;
+    transition: transform .3s ease;
 }
 .buy_now_button button:hover {
-    color: rgb(14, 87, 14);
+    color: rgb(7, 22, 7);
+    transform: scale(1.1);
 }
 .discount {
     margin-top: 20px;
@@ -196,6 +245,29 @@ main {
 }
 .shipping {
     margin-top: 25px;
+}
+/* STAMPS */
+.sec_stamps {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 150px;
+    background-color: #17214C ;
+}
+/* FOOTER */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #D5D5D5 ;
+    width: 100%;
+    height: auto;
+}
+.container_footer{
+    display: flex;
+    align-items: center;
+    height: 80px;
 }
 /* Media Query para telas menores (até 768px) */
 @media (max-width: 768px) {
