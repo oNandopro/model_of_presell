@@ -55,9 +55,15 @@ header {
 /* MAIN */
 main {
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 100%;
-
-    background-color: #79f1dd;
+}
+.sec_desc {
+    background-color: rgba(0, 255, 255, 0.603);
+}
+.sec_price {
+    background-color: #ffd9015d;
 }
 .container_main {
     display: flex;
@@ -68,7 +74,7 @@ main {
     padding: 20px; 
     
 }
-/* DESCRIÇÃO */
+/* DESCRIPTION */
 .info_one {
     display: flex;
     justify-content: space-between; 
@@ -103,8 +109,8 @@ main {
     align-items: center;
     justify-content: end;
 }
-/* VALORES */
-.info_two {
+/* INFO PRICE */
+.info_price {
     display: flex;
     justify-content: space-between;
     margin-top: 50px;
@@ -115,9 +121,12 @@ main {
     border-style: groove;
     border-width: 1px;
     border-radius: 15px;
-    width: fit-content;
-    height: 450px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.599);
+    height: auto;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.599);
+    transition: transform .6s ease;
+}
+.box_price:hover {
+    transform: scale(1.05);
 }
 .box_price_center {
     display: flex;
@@ -125,13 +134,13 @@ main {
     border-style: groove;
     border-width: 3px;
     border-radius: 15px;
-    width: fit-content;
-    height: 500px;
+    height: auto;
     margin: 20px;
-    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.599);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.599);
+    transition: transform .3s ease;
 }
-.info_desc {
-    margin-top: 30px;
+.box_price_center:hover {
+    transform: scale(1.04);
 }
 .info_body {
     display: flex;
@@ -143,9 +152,21 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 30px;
 }
 .imagem_buy {
     margin: 30px;
+}
+.price {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;  
+}
+.p_price {
+    font-size: 5em;
+}
+.p_bottle {
+    font-size: 1em;
 }
 .buy_now_button button{
     display: flex;
@@ -158,13 +179,24 @@ main {
     border-radius: 10px;
     cursor: pointer;
     font-size: 1em; 
-    margin-top: 50px;
+    margin-top: 20px;
 }
 .buy_now_button button:hover {
     color: rgb(14, 87, 14);
 }
-
-
+.discount {
+    margin-top: 20px;
+}
+.riscado {
+    text-decoration: line-through;
+    text-decoration-thickness: 2px;
+}
+.card {
+    margin-top: 10px;
+}
+.shipping {
+    margin-top: 25px;
+}
 /* Media Query para telas menores (até 768px) */
 @media (max-width: 768px) {
     .container_header {
