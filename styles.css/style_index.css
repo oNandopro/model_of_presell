@@ -247,6 +247,7 @@ h3 {
     display: flex;
     justify-content: center;
     margin-top: 20px;
+    font-size: 1.2em;
 }
 .riscado {
     text-decoration: line-through;
@@ -261,6 +262,7 @@ h3 {
     display: flex;
     justify-content: center;
     margin-top: 25px;
+    font-size: 1.3em;
 }
 /* STAMPS */
 .sec_stamps {
@@ -368,7 +370,7 @@ footer {
         justify-content: center;
     }
     h3 {
-        font-size: 1em;
+        font-size: 1.2em;
     }
     .buy_now_button button {
         font-size: 1em;
@@ -392,8 +394,11 @@ footer {
         margin-top: 10px;
         
     }
+    .p_price {
+        font-size: 5em;
+    }
     .p_best_price {
-        font-size: 6em;
+        font-size: 5.5em;
     }
 }
 @media (min-width: 769px) and (max-width: 1179px) {
