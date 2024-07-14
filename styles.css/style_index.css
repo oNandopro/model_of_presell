@@ -21,6 +21,9 @@ body {
     height: 97vh;
     margin: 0px;
 }
+a {
+    text-decoration: none;
+}
 /* Header */
 header {
     display: flex;
@@ -40,6 +43,11 @@ header {
     justify-content: start;
     align-items: center;
     font-size: 2.5em; 
+    transition: transform .8s ease;
+    color: white;
+}
+.name_product h1:hover {
+    transform: scale(1.1);
 }
 .button_one {
     justify-content: end;
@@ -271,6 +279,7 @@ h3 {
     align-items: center;
     color: white;
     height: 150px;
+    margin-top: 40px;
     background-color: #17214C ;
 }
 /* FOOTER */
@@ -286,6 +295,9 @@ footer {
     display: flex;
     align-items: center;
     height: 80px;
+}
+footer div p a {
+    color: black;
 }
 /* Media Query para telas menores (até 768px) */
 @media (max-width: 768px) {
