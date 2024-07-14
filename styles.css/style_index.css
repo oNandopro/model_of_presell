@@ -115,6 +115,7 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: start;
+    margin-left: 50px;
 }
 .frase {
     display: flex;
@@ -139,6 +140,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: end;
+    margin-right: 50px;
 }
 /* INFO PRICE */
 .info_price {
@@ -289,26 +291,32 @@ footer {
         padding: 10px 15px;
     }
     /* MAIN */
-    .imagem_cel {
-        display: flex;
-        justify-content: center;
-    }
     .info_one {
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .imagem_cel {
+        display: flex;
     }
     .imagem {
         display: none;
     }
     .descrição {
+        display: flex;
+        justify-content: center;
         margin-top: 30px;
+        margin-right: 60px;
+    }
+    .frase {
+        display: flex;
+        justify-content: center;
     }
     .button_two button {
+        display: flex;
+        justify-content: center;
         margin-top: 30px;
-    }
-
-    .descricao, .imagem {
-        width: 100%; /* Ajuste conforme necessário */
     }
     /* DIV BALLOON */
     .div_balloon {
@@ -398,9 +406,11 @@ footer {
     }
     .descrição {
         margin-top: 30px;
+        margin-right: 60px;
     }
     .button_two button {
         margin-top: 30px;
+        width: 300px;
     }
 
     .descricao, .imagem {
