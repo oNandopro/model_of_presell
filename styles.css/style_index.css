@@ -1,5 +1,8 @@
 @charset "UTF-8";
-
+@font-face {
+    font-family: 'Quicksand';
+    src: url(/fonts/Quicksand/Quicksand-VariableFont_wght.ttf) format('truetype');
+}
 * {
     margin: 0;
     padding: 0;
@@ -7,7 +10,7 @@
     letter-spacing: 1px;
     word-spacing: 0px;
     word-wrap: break-word; 
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Quicksand';
 }
 body {
     display: flex;
@@ -116,6 +119,11 @@ main {
     align-items: center;
     justify-content: start;
     margin-left: 50px;
+}
+.p_name {
+    text-align: justify;
+    hyphens: auto;
+    font-size: 1.5em;
 }
 .frase {
     display: flex;
@@ -291,6 +299,9 @@ footer {
         padding: 10px 15px;
     }
     /* MAIN */
+    p {
+        font-size: .8em;
+    }
     .info_one {
         display: flex;
         flex-direction: column;
@@ -307,7 +318,12 @@ footer {
         display: flex;
         justify-content: center;
         margin-top: 30px;
-        margin-right: 60px;
+        margin-right: 50px;
+    }
+    .p_name {
+        text-align: justify;
+        hyphens: auto;
+        font-size: 1.5em;
     }
     .frase {
         display: flex;
@@ -407,6 +423,11 @@ footer {
     .descrição {
         margin-top: 30px;
         margin-right: 60px;
+    }
+    .p_name {
+        text-align: justify;
+        hyphens: auto;
+        font-size: 1.5em;
     }
     .button_two button {
         margin-top: 30px;
