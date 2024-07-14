@@ -376,7 +376,6 @@ footer div p a {
         display: flex;
         flex-direction: column;
         margin-right: 15px;
-        background-color: #D54545;
     }
     .div_cel_rigth {
         display: flex;
@@ -384,6 +383,7 @@ footer div p a {
         justify-content: center;
     }
     h3 {
+        padding: 5px;
         font-size: 1.2em;
     }
     .buy_now_button button {
