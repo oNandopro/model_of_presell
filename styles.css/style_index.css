@@ -375,6 +375,8 @@ footer div p a {
     .div_cel_left {
         display: flex;
         flex-direction: column;
+        margin-right: 15px;
+        background-color: #D54545;
     }
     .div_cel_rigth {
         display: flex;
@@ -411,6 +413,10 @@ footer div p a {
     }
     .p_best_price {
         font-size: 5.5em;
+    }
+    /* FOOTER */
+    .container_footer {
+        height: 50PX;
     }
 }
 @media (min-width: 769px) and (max-width: 1179px) {
@@ -522,6 +528,9 @@ footer div p a {
     }
     .p_best_price {
         font-size: 6em;
+    }
+    .container_footer {
+        height: 50PX;
     }
 }
 
