@@ -9,7 +9,6 @@
     word-wrap: break-word; 
     font-family: Arial, Helvetica, sans-serif;
 }
- 
 body {
     display: flex;
     flex-direction: column;
@@ -93,9 +92,6 @@ main {
     font-size: 2em;
     font-weight: bold;
 }
-.sec_price {
-    
-}
 .container_main {
     display: flex;
     flex-direction: column;
@@ -134,7 +130,6 @@ main {
     cursor: pointer;
     font-size: 1em; 
     margin-top: 30px;
-
     transition: transform .5s ease;
 }
 .button_two button:hover {
@@ -201,6 +196,8 @@ h3 {
     font-size: 2.5em;
 }
 .imagem_buy {
+    display: flex;
+    justify-content: center;
     margin: 30px;
 }
 .price {
@@ -215,9 +212,12 @@ h3 {
 .p_bottle {
     font-size: 1em;
 }
+.buy_now_button {
+    display: flex;
+    justify-content: center;
+}
 .buy_now_button button{
     display: flex;
-    
     padding: 15px 25px;
     background-image: linear-gradient(#FFE456 50%,#FFD701 50%);
     font-weight: 900;
@@ -234,6 +234,8 @@ h3 {
     transform: scale(1.1);
 }
 .discount {
+    display: flex;
+    justify-content: center;
     margin-top: 20px;
 }
 .riscado {
@@ -241,9 +243,13 @@ h3 {
     text-decoration-thickness: 2px;
 }
 .card {
+    display: flex;
+    justify-content: center;
     margin-top: 10px;
 }
 .shipping {
+    display: flex;
+    justify-content: center;
     margin-top: 25px;
 }
 /* STAMPS */
@@ -332,11 +338,10 @@ footer {
         display: flex;
         flex-direction: column;
     }
-    .info_desc {
+    .div_cel_rigth {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
     }
     h3 {
         font-size: 1em;
@@ -366,7 +371,112 @@ footer {
     .p_best_price {
         font-size: 6em;
     }
-    
+}
+@media (min-width: 769px) and (max-width: 1179px) {
+    /* HEADER */
+    .container_header {
+        flex-direction: column;
+        align-items: center;
+    }
+    .name_product h1 {
+        margin-bottom: 20px;
+    }
+    .button_one button {
+        padding: 10px 15px;
+    }
+    /* MAIN */
+    .imagem_cel {
+        display: flex;
+        justify-content: center;
+    }
+    .info_one {
+        display: flex;
+        flex-direction: column;
+    }
+    .imagem {
+        display: none;
+    }
+    .descrição {
+        margin-top: 30px;
+    }
+    .button_two button {
+        margin-top: 30px;
+    }
+
+    .descricao, .imagem {
+        width: 100%; /* Ajuste conforme necessário */
+    }
+    /* DIV BALLOON */
+    .div_balloon {
+        font-size: 1.5em;
+    }
+    /* MAIN */
+    .container_main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: fit-content;
+    }
+    /* PRICE */
+    .info_price {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 700px;
+    }
+    .info_body {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .div_cel_left {
+        display: flex;
+        flex-direction: column;
+        margin: 50px;
+    }
+    .div_cel_rigth {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 50px;
+    }
+    h3 {
+        font-size: 2em;
+    }
+    .buy_now_button button {
+        font-size: 1em;
+    }
+    .box_price {
+        display: flex;
+        justify-content: center;
+        width: 700px;
+        height: 350px;
+    }
+    .box_price_center {
+        display: flex;
+        justify-content: center;
+        order: -1;
+        margin: 20px;
+        width: 700px;
+        height: 350px;
+    }
+    .order {
+        order: 0;
+        margin: 20px;
+        margin-top: 10px;
+    }
+    .order_one {
+        order: 1;
+        margin: 20px;
+        margin-top: 10px;
+        
+    }
+    .p_best_price {
+        font-size: 6em;
+    }
+}
+
 
   
   
