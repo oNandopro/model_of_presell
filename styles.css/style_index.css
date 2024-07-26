@@ -3,6 +3,14 @@
     font-family: 'Quicksand';
     src: url(/fonts/Quicksand/Quicksand-VariableFont_wght.ttf) format('truetype');
 }
+@font-face {
+    font-family: 'Inter';
+    src: url(/fonts/Inter/Inter-VariableFont_slnt\,wght.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'poppins';
+    src: url(/fonts/Poppins/Poppins-Medium.ttf) format('truetype');
+}
 * {
     margin: 0;
     padding: 0;
@@ -10,7 +18,7 @@
     letter-spacing: 1px;
     word-spacing: 0px;
     word-wrap: break-word; 
-    font-family: 'Quicksand';
+    font-family: 'quicksand';
 }
 body {
     display: flex;
